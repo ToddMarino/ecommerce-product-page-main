@@ -34,7 +34,12 @@
           </ul>
         </div>
         <div>
-          <img src="images/icon-cart.svg" alt="shopping cart icon" /><img
+          <img
+            class="img-cart"
+            src="images/icon-cart.svg"
+            alt="shopping cart icon"
+          />
+          <img
             class="img-avatar"
             src="images/image-avatar.png"
             alt="user avatar"
@@ -46,17 +51,45 @@
     <main>
       <div class="main--wrapper">
         <div class="main--photos">
-          <img src="images/image-product-1.jpg" alt="shoes" />
+          <div class="featured-photo">
+            <img src="images/image-product-1.jpg" alt="shoes" />
+          </div>
+
           <div class="thumbnails--wrapper">
-            <img src="images/image-product-1-thumbnail.jpg" alt="" /><img
-              src="images/image-product-2-thumbnail.jpg"
-              alt=""
-            /><img src="images/image-product-3-thumbnail.jpg" alt="" /><img
-              src="images/image-product-4-thumbnail.jpg"
-              alt=""
-            />
+            <div class="thumbnail selected-img">
+              <img
+                src="images/image-product-1-thumbnail.jpg"
+                alt="shoes"
+                data-thumbnail="1"
+              />
+            </div>
+
+            <div class="thumbnail">
+              <img
+                src="images/image-product-2-thumbnail.jpg"
+                alt="shoes"
+                data-thumbnail="2"
+              />
+            </div>
+
+            <div class="thumbnail">
+              <img
+                src="images/image-product-3-thumbnail.jpg"
+                alt="shoes"
+                data-thumbnail="3"
+              />
+            </div>
+
+            <div class="thumbnail">
+              <img
+                src="images/image-product-4-thumbnail.jpg"
+                alt="shoes"
+                data-thumbnail="4"
+              />
+            </div>
           </div>
         </div>
+
         <div class="main--content">
           <h1>Sneaker Company</h1>
           <h2>Fall Limited Edition Sneakers</h2>
@@ -73,7 +106,7 @@
 
           <div class="buttons--wrapper">
             <div class="button-quantity">
-              <button data-button="descrease">
+              <button data-button="decrease">
                 <img src="images/icon-minus.svg" alt="minus icon" />
               </button>
               <span id="item-quantity">0</span>
@@ -82,7 +115,8 @@
               </button>
             </div>
             <button class="button-addToCart">
-              <img src="images/icon-cart.svg" alt="shopping cart icon"> Add to cart
+              <img src="images/icon-cart.svg" alt="shopping cart icon" /> Add to
+              cart
             </button>
           </div>
         </div>

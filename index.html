@@ -34,11 +34,14 @@
           </ul>
         </div>
         <div>
-          <img
-            class="img-cart"
-            src="images/icon-cart.svg"
-            alt="shopping cart icon"
-          />
+          <div class="cart--wrapper">
+            <img
+              class="img-cart"
+              src="images/icon-cart.svg"
+              alt="shopping cart icon"
+            />
+            <div class="cart--pill"></div>
+          </div>
           <img
             class="img-avatar"
             src="images/image-avatar.png"
@@ -46,6 +49,13 @@
           />
         </div>
       </div>
+      <dialog>
+        <span class="dialog--title">Cart</span>
+        <div class="dialog--card">
+          <!-- dynamic cart data -->
+        </div>
+        <button>Checkout</button>
+      </dialog>
     </header>
 
     <main>
